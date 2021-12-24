@@ -15,9 +15,9 @@ number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 // Space is for the Uppercase conversion
 space = [];
-// Choices declared outside the if statement so they can be concatenated upon condition
+// Choices declared outside the if statement in order to be concatenated upon condition
 var choices;
-// converts letters to uppercase 
+// converts letters to UPPERCASE 
 var toUpper = function (x) {
     return x.toUpperCase();
 };
@@ -31,14 +31,17 @@ get.addEventListener("click", function () {
     document.getElementById("password").placeholder = ps;
 });
 
-// Start function to generate password
+// Start function password generator
 function generatePassword() {
+    
     // Asks for user input
     enter = parseInt(prompt("How many characters would you like your password? Choose between 8 and 128"));
+    
     // First if statement for user validation 
     if (!enter) {
         alert("This needs a value");
     } else if (enter < 8 || enter > 128) {
+        
         // Validates user input
         // Start user input prompts
         enter = parseInt(prompt("You must choose between 8 and 128"));

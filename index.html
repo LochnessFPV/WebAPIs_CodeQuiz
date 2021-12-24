@@ -1,62 +1,43 @@
 <!DOCTYPE html>
-
-<html lang="en">
-    
-<head>
+<html>
+  <head>
+    <title>Word Guess Game</title>
     <meta charset="UTF-8" />
-    <!-- Setting Responsive Scaling to screen ratio -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Random Password Generator -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    
-    <!-- Title -->
-    <title>Password Generator</title>
-    
-    <!-- Style links -->
-    <link rel="stylesheet" type="text/css" href="assets/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class= "large-font">Word Guess Game</div>
+      <button class="start-button">Start</button>
+    </header>
 
-</head>
-    
-<!-- Body -->
-
-<body>
-    <!-- Wrapper container with Content -->
-    <div id="wrapper">
-        <header>
-            <h1>Password Generator</h1>
-        </header>
-        
-        <!-- Content area-->
-        <div id="content">
-            <h2>Generate a Password</h2>
-            <hr>
-            
-            <!-- Read-Only text area for output-->
-            <textarea readonly id="password" placeholder="Your Secure Password"
-                aria-label="Generated Password"></textarea>
-            <hr>
-            
-            <!-- Buttons div -->
-            <div id="btn">
-                
-                <!-- Generate password button -->
-                <button id="generate">Generate
-                    Password</button>
-                
-                <!-- Copy button -->
-                <button id="copy">Copy to Clipboard</button>
-
-
-            </div>
+    <main>
+      <section>
+        <div class="card word-guess">
+          <div class="large-font word-blanks">J _ v _ S c r_ _t</div>
         </div>
-    </div>
+      </section>
 
-
-    <!-- Javascript file -->
-    <script src="script.js"></script>
-    
-</body>
-
+      <section>
+        <div class="card results">
+          <div class="win-loss-container">
+          <div>
+          <h2>Wins: <span class="win">0 </span> </h2>
+          <h2>Losses: <span class="lose">0</span></h2>
+        </div>
+          <button class="reset-button">Reset Score</button>
+      </div>
+          <div class="card timer">
+            <div class="timer-text">
+            <div class="large-font timer-count">10</div>
+            <h3>seconds remaining</h3>
+          </div>
+        
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

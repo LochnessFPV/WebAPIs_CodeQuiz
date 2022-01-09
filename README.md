@@ -1,8 +1,14 @@
 # Web API's CodeQuiz
 
-This repo aims to to build a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. 
+This repo aims to to build a timed coding quiz with multiple-choice questions. 
 
-This week’s coursework will equip you with all the skills you need to succeed in this assignment.
+This app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code.
+
+It has a 
+          clean,
+          polished,
+          and responsive user interface. 
+
 
 ## User Story
 
@@ -32,6 +38,6 @@ THEN I can save my initials and my score
 
 The following animation demonstrates the application functionality:
 
-![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./assets/04-web-apis-homework-demo.gif)
+![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./assets/IMG/04-web-apis-homework-demo.gif)
 
 
